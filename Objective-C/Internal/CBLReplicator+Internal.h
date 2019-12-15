@@ -29,6 +29,12 @@ typedef NS_ENUM(uint32_t, CBLCustomWebSocketCloseCode) {
     kCBLWebSocketCloseUserPermanent = kWebSocketCloseFirstAvailable + 2
 };
 
+@protocol MockReplicatorDelegate <NSObject>
+
+- (void)mockStatusChanged: (C4Replicator*)repl status :(C4ReplicatorStatus)status context: (void *)context;
+
+@end
+
 @interface CBLReplicatorConfiguration ()
 
 @property (readonly, nonatomic) NSDictionary* effectiveOptions;
@@ -54,8 +60,12 @@ typedef NS_ENUM(uint32_t, CBLCustomWebSocketCloseCode) {
 @property (readonly, atomic) BOOL active;
 @property (nonatomic) MYBackgroundMonitor* bgMonitor;
 @property (readonly, atomic) dispatch_queue_t dispatchQueue;
+@property (atomic) id<MockReplicatorDelegate> mockDelegate;
 
 - (void) setSuspended: (BOOL)suspended;
+
+- (void) c4StatusChanged: (C4ReplicatorStatus)c4Status;
+- (C4Replicator*) c4repl;
 
 @end
 

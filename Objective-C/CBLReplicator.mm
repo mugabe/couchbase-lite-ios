@@ -107,6 +107,7 @@ typedef enum {
 @synthesize status=_status;
 @synthesize bgMonitor=_bgMonitor;
 @synthesize dispatchQueue=_dispatchQueue;
+@synthesize mockDelegate=_mockDelegate;
 
 - (instancetype) initWithConfig: (CBLReplicatorConfiguration *)config {
     CBLAssertNotNil(config);
@@ -147,6 +148,10 @@ typedef enum {
                  (isPush(_config.replicatorType)  ? ">" : ""),
                  _config.target];
     return _desc;
+}
+
+- (C4Replicator*) c4repl {
+    return _repl;
 }
 
 - (void) clearRepl {
@@ -272,7 +277,7 @@ typedef enum {
         .pushFilter = filter(_config.pushFilter, true),
         .validationFunc = filter(_config.pullFilter, false),
         .optionsDictFleece = {optionsFleece.buf, optionsFleece.size},
-        .onStatusChanged = &statusChanged,
+        .onStatusChanged = &statusChangedRoot,
         .onDocumentsEnded = &onDocsEnded,
         .callbackContext = (__bridge void*)self,
         .socketFactory = &socketFactory,
@@ -452,7 +457,18 @@ static C4ReplicatorValidationFunction filter(CBLReplicationFilter filter, bool i
 
 #pragma mark - STATUS CHANGES:
 
+static void statusChangedRoot(C4Replicator *repl, C4ReplicatorStatus status, void *context) {
+    NSLog(@">>> statusChangedRoot recieved::: ");
+    auto replicator = (__bridge CBLReplicator*)context;
+    if (replicator.mockDelegate) {
+        [replicator.mockDelegate mockStatusChanged: repl status: status context: context];
+        return;
+    }
+    statusChanged(repl, status, context);
+}
+
 static void statusChanged(C4Replicator *repl, C4ReplicatorStatus status, void *context) {
+    NSLog(@">>> statusChanged ---  recieved::: ");
     auto replicator = (__bridge CBLReplicator*)context;
     dispatch_async(replicator->_dispatchQueue, ^{
         if (repl == replicator->_repl)

@@ -21,8 +21,18 @@
 #import "CBLDatabase+Internal.h"
 #import "CBLDocumentReplication+Internal.h"
 #import "CBLReplicator+Backgrounding.h"
+#import "CBLReplicator+Internal.h"
 
 @interface ReplicatorTest_Main : ReplicatorTest
+@end
+
+@interface ReplicatorTestMockReplicator : NSObject<MockReplicatorDelegate> @end
+@implementation ReplicatorTestMockReplicator
+
+- (void)mockStatusChanged: (C4Replicator*)repl status :(C4ReplicatorStatus)status context: (void *)context {
+    NSLog(@">>> mock status recieved::: ");
+}
+
 @end
 
 @implementation ReplicatorTest_Main
@@ -34,6 +44,42 @@
     id config = [self configWithTarget: target type: kCBLReplicatorTypePush continuous: NO];
     [self run: config errorCode: 0 errorDomain: nil];
 }
+
+- (void) testReplicator {
+    XCTestExpectation* x = [self expectationWithDescription: @"Replicator Stopped"];
+    id target = [[CBLDatabaseEndpoint alloc] initWithDatabase: otherDB];
+    id config = [self configWithTarget: target type: kCBLReplicatorTypePush continuous: YES];
+    CBLReplicator* replicator = [[CBLReplicator alloc] initWithConfig: config];
+    ReplicatorTestMockReplicator* mock = [[ReplicatorTestMockReplicator alloc] init];
+    replicator.mockDelegate = mock;
+    NSMutableArray* activity = [[NSMutableArray alloc] init];
+    __block int count = 0;
+    [replicator addChangeListener:^(CBLReplicatorChange * change) {
+        [activity addObject: [NSNumber numberWithInt: change.status.activity]];
+        if (change.status.activity == kCBLReplicatorStopped) {
+            [x fulfill];
+        } else if (change.status.activity == kCBLReplicatorConnecting) {
+            if (++count == 2) {
+                c4repl_stop([change.replicator c4repl]);
+                [change.replicator c4StatusChanged: (C4ReplicatorStatus){.level = kC4Stopped}];
+            }
+        }
+    }];
+    
+    [replicator start];
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 1 * NSEC_PER_SEC),
+                   dispatch_get_global_queue( DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        
+        c4repl_stop([replicator c4repl]);
+        C4ReplicatorStatus s = {.level = kC4Stopped, .error = c4error_make(NetworkDomain, kC4NetErrTimeout, c4str("error"))};
+        [replicator c4StatusChanged: s];
+    });
+    [self waitForExpectations: @[x] timeout: 10];
+    NSArray* exp = [NSArray arrayWithObjects: @2, @1, @2, @0, nil];
+    Assert([activity isEqualToArray: exp]);
+}
+
 
 - (void) testPushDoc {
     NSError* error;
