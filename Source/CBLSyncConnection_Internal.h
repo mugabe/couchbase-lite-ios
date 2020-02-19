@@ -7,8 +7,8 @@
 //
 
 #import "CBLSyncConnection.h"
-#import "CouchbaseLite.h"
-#import "CouchbaseLitePrivate.h"
+#import "CouchbaseLiteLegacy.h"
+#import "CouchbaseLiteLegacyPrivate.h"
 #import "CBLMisc.h"
 #import "CBL_BlobStore.h"
 #import "BLIPRequest.h"

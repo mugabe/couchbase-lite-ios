@@ -13,7 +13,7 @@
 //  either express or implied. See the License for the specific language governing permissions
 //  and limitations under the License.
 
-#import "CouchbaseLitePrivate.h"
+#import "CouchbaseLiteLegacyPrivate.h"
 #import "CBLDatabase+Insertion.h"
 #import "CBL_Revision.h"
 #import "CBLDatabaseChange.h"

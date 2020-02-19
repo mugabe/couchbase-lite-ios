@@ -6,7 +6,7 @@
 //  Copyright (c) 2013 Couchbase. All rights reserved.
 //
 
-#import <CouchbaseLite/CBLAuthenticator+OpenID.h>
+#import <CouchbaseLiteLegacy/CBLAuthenticator+OpenID.h>
 @protocol OpenIDControllerDelegate;
 
 

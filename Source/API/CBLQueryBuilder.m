@@ -17,7 +17,7 @@
 #import "CBLQueryBuilder+Private.h"
 #import "CBLReduceFuncs.h"
 #import "CBJSONEncoder.h"
-#import "CouchbaseLitePrivate.h"
+#import "CouchbaseLiteLegacyPrivate.h"
 #import "CBLInternal.h"
 #import "CBLMisc.h"
 

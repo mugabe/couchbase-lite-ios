@@ -10,7 +10,7 @@
 #import "CBLListener+Internal.h"
 #import "CBLSyncConnection.h"
 #import "BLIPRequest.h"
-#import "CouchbaseLite.h"
+#import "CouchbaseLiteLegacy.h"
 #import "CBLInternal.h"
 #import "BLIPPocketSocketListener.h"
 #import "PSWebSocket.h"

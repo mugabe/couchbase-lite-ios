@@ -18,7 +18,7 @@
 // the License.
 
 #import "CBLEncryptionController.h"
-#import <CouchbaseLite/CouchbaseLite.h>
+#import <CouchbaseLiteLegacy/CouchbaseLiteLegacy.h>
 @import UIKit;
 @import LocalAuthentication;
 

@@ -14,8 +14,8 @@
 //  and limitations under the License.
 
 #import "CBLUITableSource.h"
-#import "CouchbaseLite.h"
-#import "CouchbaseLitePrivate.h"
+#import "CouchbaseLiteLegacy.h"
+#import "CouchbaseLiteLegacyPrivate.h"
 #import "CBLArrayDiff+UIKit.h"
 
 

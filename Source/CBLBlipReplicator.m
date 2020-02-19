@@ -9,7 +9,7 @@
 #import "CBLBlipReplicator.h"
 #import "CBLSyncConnection.h"
 #import "CBLAuthorizer.h"
-#import "CouchbaseLitePrivate.h"
+#import "CouchbaseLiteLegacyPrivate.h"
 #import "CBLReachability.h"
 #import "CBLMisc.h"
 #import "CBLCookieStorage.h"

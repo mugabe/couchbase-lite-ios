@@ -14,7 +14,7 @@
 //  and limitations under the License.
 
 #import "CBLManager.h"
-#import "CouchbaseLitePrivate.h"
+#import "CouchbaseLiteLegacyPrivate.h"
 
 #import "CBLDatabase.h"
 #import "CBLDatabase+Attachments.h"
@@ -51,15 +51,15 @@ static const CBLManagerOptions kCBLManagerDefaultOptions;
 #define kDefaultMaxRevs 20
 
 #ifdef GNUSTEP
-static double CouchbaseLiteVersionNumber = 0.7;
+static double CouchbaseLiteLegacyVersionNumber = 0.7;
 #else
-extern double CouchbaseLiteVersionNumber; // Defined in Xcode-generated CouchbaseLite_vers.c
+extern double CouchbaseLiteLegacyVersionNumber; // Defined in Xcode-generated CouchbaseLite_vers.c
 #endif
 
 
 NSString* CBLVersion( void ) {
-    if (CouchbaseLiteVersionNumber > 0)
-        return $sprintf(@"%s (build %g)", CBL_VERSION_STRING, CouchbaseLiteVersionNumber);
+    if (CouchbaseLiteLegacyVersionNumber > 0)
+        return $sprintf(@"%s (build %g)", CBL_VERSION_STRING, CouchbaseLiteLegacyVersionNumber);
     else
         return $sprintf(@"%s unofficial: commit %.8s%s", CBL_VERSION_STRING, GitCommit, GitDirty);
 }

@@ -6,7 +6,7 @@
 //  Copyright (c) 2011-2013 Couchbase, Inc. All rights reserved.
 //
 
-#import <CouchbaseLite/CouchbaseLite.h>
+#import <CouchbaseLiteLegacy/CouchbaseLiteLegacy.h>
 @class NSImage;
 
 

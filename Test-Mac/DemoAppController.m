@@ -21,8 +21,8 @@
 #import "MYBlockUtils.h"
 #import "OpenIDController+AppKit.h"
 
-#import <CouchbaseLite/CouchbaseLite.h>
-#import <CouchbaseLite/CBLRemoteLogging.h>
+#import <CouchbaseLiteLegacy/CouchbaseLiteLegacy.h>
+#import <CouchbaseLiteLegacy/CBLRemoteLogging.h>
 #import <CouchbaseLiteListener/CBLListener.h>
 
 #undef FOR_TESTING_PURPOSES

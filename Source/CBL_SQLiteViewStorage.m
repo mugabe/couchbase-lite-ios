@@ -19,7 +19,7 @@
 #import "CBLQuery+FullTextSearch.h"
 #import "CBLQuery+Geo.h"
 #import "CBLCollateJSON.h"
-#import "CouchbaseLitePrivate.h"
+#import "CouchbaseLiteLegacyPrivate.h"
 #import "CBLInternal.h"
 #import "CBLMisc.h"
 #import "ExceptionUtils.h"

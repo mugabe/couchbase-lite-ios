@@ -14,7 +14,7 @@
 //  and limitations under the License.
 
 #import "DemoQuery.h"
-#import <CouchbaseLite/CouchbaseLite.h>
+#import <CouchbaseLiteLegacy/CouchbaseLiteLegacy.h>
 
 
 @interface DemoQuery ()

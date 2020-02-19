@@ -13,7 +13,7 @@
 #import "CBLDatabase+Attachments.h"
 #import "CBLStatus.h"
 #import "CBLProgressGroup.h"
-#import "CouchbaseLitePrivate.h"
+#import "CouchbaseLiteLegacyPrivate.h"
 
 #import "MYBlockUtils.h"
 #import "MYURLUtils.h"

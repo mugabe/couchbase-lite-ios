@@ -14,7 +14,7 @@
 //  and limitations under the License.
 
 #import "CBLQuery.h"
-#import "CouchbaseLitePrivate.h"
+#import "CouchbaseLiteLegacyPrivate.h"
 #import "CBLInternal.h"
 #import "CBLView+Internal.h"
 #import "CBLArrayDiff.h"

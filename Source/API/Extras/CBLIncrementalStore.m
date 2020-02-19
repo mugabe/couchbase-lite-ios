@@ -18,7 +18,7 @@
 
 #import "CBLIncrementalStore.h"
 
-#import <CouchbaseLite/CouchbaseLite.h>
+#import <CouchbaseLiteLegacy/CouchbaseLiteLegacy.h>
 
 #define COMMON_DIGEST_FOR_OPENSSL
 #import <CommonCrypto/CommonDigest.h>

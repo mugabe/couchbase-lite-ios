@@ -14,8 +14,8 @@
 //  and limitations under the License.
 
 #import <Foundation/Foundation.h>
-#import "CouchbaseLite.h"
-#import "CouchbaseLitePrivate.h"
+#import "CouchbaseLiteLegacy.h"
+#import "CouchbaseLiteLegacyPrivate.h"
 #import "CBLListener.h"
 #import "CBLRestReplicator.h"
 #import "CBLManager+Internal.h"

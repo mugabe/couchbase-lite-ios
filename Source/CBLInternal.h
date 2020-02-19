@@ -6,8 +6,8 @@
 //  Copyright (c) 2011-2013 Couchbase, Inc. All rights reserved.
 //
 
-#import "CouchbaseLite.h"
-#import "CouchbaseLitePrivate.h"
+#import "CouchbaseLiteLegacy.h"
+#import "CouchbaseLiteLegacyPrivate.h"
 #import "CBLDatabase+Attachments.h"
 #import "CBLManager+Internal.h"
 #import "CBLView+Internal.h"

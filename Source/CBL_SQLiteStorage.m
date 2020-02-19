@@ -23,7 +23,7 @@
 #import "CBJSONEncoder.h"
 #import "CBLSymmetricKey.h"
 #import "CBLInternal.h"
-#import "CouchbaseLitePrivate.h"
+#import "CouchbaseLiteLegacyPrivate.h"
 #import "ExceptionUtils.h"
 #import "MYAction.h"
 #import "CBL_RevID.h"

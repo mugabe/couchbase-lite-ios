@@ -24,7 +24,7 @@
 
 #import "OpenIDController+UIKit.h"
 
-#import "CouchbaseLite.h"
+#import "CouchbaseLiteLegacy.h"
 #import "MYLogging.h"
 #import "CBLView+Internal.h"
 #import "CBLDatabase+Insertion.h"

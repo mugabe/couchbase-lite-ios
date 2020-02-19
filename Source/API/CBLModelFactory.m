@@ -15,7 +15,7 @@
 
 #import "CBLModelFactory.h"
 #import "CBLModel.h"
-#import "CouchbaseLitePrivate.h"
+#import "CouchbaseLiteLegacyPrivate.h"
 
 
 @implementation CBLModelFactory

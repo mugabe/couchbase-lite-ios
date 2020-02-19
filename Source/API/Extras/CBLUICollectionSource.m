@@ -17,7 +17,7 @@
 
 
 #import "CBLUICollectionSource.h"
-#import <CouchbaseLite/CouchbaseLite.h>
+#import <CouchbaseLiteLegacy/CouchbaseLiteLegacy.h>
 
 
 @interface CBLUICollectionSource ()

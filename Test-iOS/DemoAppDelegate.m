@@ -15,7 +15,7 @@
 
 #import "DemoAppDelegate.h"
 #import "RootViewController.h"
-#import "CouchbaseLite.h"
+#import "CouchbaseLiteLegacy.h"
 
 #define PERFORMANCE_TEST 0 // Enable this to do benchmarking (see RunViewPerformanceTest below)
 #if PERFORMANCE_TEST

@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import <CouchbaseLite/CouchbaseLite.h>
+#import <CouchbaseLiteLegacy/CouchbaseLiteLegacy.h>
 
 
 @interface AppDelegate ()

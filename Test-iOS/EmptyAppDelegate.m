@@ -7,7 +7,7 @@
 //
 
 #import "EmptyAppDelegate.h"
-#import "CouchbaseLite.h"
+#import "CouchbaseLiteLegacy.h"
 #import "Test.h"
 
 @implementation EmptyAppDelegate

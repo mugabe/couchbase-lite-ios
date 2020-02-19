@@ -16,7 +16,7 @@
 #import "CBLModelArray.h"
 #import "CBLModel_Internal.h"
 #import "CBLDatabase+Insertion.h"
-#import "CouchbaseLitePrivate.h"
+#import "CouchbaseLiteLegacyPrivate.h"
 
 
 @implementation CBLModelArray

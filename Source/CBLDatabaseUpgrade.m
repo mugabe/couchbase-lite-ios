@@ -14,7 +14,7 @@
 //  and limitations under the License.
 
 #import "CBLDatabaseUpgrade.h"
-#import "CouchbaseLitePrivate.h"
+#import "CouchbaseLiteLegacyPrivate.h"
 #import "CBLDatabase+Attachments.h"
 #import "CBLDatabase+Insertion.h"
 #import "CBL_Revision.h"

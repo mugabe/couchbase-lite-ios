@@ -17,7 +17,7 @@
 
 #import "CBLRestReplicator+Internal.h"
 #import "CBLInternal.h"
-#import "CouchbaseLitePrivate.h"
+#import "CouchbaseLiteLegacyPrivate.h"
 #import "MYBlockUtils.h"
 #import "MYBackgroundMonitor.h"
 

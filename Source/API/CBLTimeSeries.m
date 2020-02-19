@@ -7,7 +7,7 @@
 //
 
 #import "CBLTimeSeries.h"
-#import "CouchbaseLitePrivate.h"
+#import "CouchbaseLiteLegacyPrivate.h"
 #import "CBLDatabase.h"
 #import "CBLJSON.h"
 #import "CBLDatabase+Internal.h"

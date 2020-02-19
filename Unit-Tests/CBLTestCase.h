@@ -6,8 +6,8 @@
 //
 //
 
-#import <CouchbaseLite/CouchbaseLite.h>
-#import <CouchbaseLite/CouchbaseLitePrivate.h>
+#import <CouchbaseLiteLegacy/CouchbaseLiteLegacy.h>
+#import <CouchbaseLiteLegacy/CouchbaseLiteLegacyPrivate.h>
 #import <XCTest/XCTest.h>
 #import "CollectionUtils.h"
 @class CBLRemoteRequest;

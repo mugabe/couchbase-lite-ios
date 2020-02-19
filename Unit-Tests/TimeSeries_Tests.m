@@ -7,7 +7,7 @@
 //
 
 #import "CBLTestCase.h"
-#import "CouchbaseLite.h"
+#import "CouchbaseLiteLegacy.h"
 #import "CBLTimeSeries.h"
 #import "CBLGZip.h"
 

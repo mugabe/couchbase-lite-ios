@@ -6,7 +6,7 @@
 //  Copyright © 2015 Couchbase, Inc. All rights reserved.
 //
 
-#import <CouchbaseLiteListener/CouchbaseLiteListener.h>
+#import <CouchbaseLiteLegacyListener/CouchbaseLiteListener.h>
 
 @interface CBLHTTPListener : CBLListener
 

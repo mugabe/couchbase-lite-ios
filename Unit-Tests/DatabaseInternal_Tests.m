@@ -22,7 +22,7 @@
 #import "CBLBase64.h"
 #import "CBL_Shared.h"
 #import "CBLInternal.h"
-#import "CouchbaseLitePrivate.h"
+#import "CouchbaseLiteLegacyPrivate.h"
 #import "CBLGZip.h"
 
 

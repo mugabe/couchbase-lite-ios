@@ -3,4 +3,4 @@
 //
 
 #import "CBLTestCase.h"
-#import "CouchbaseLite.h"
+#import "CouchbaseLiteLegacy.h"

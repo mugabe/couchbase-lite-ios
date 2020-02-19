@@ -11,7 +11,7 @@
 #import "Terminal.h"
 #import "LoggingMode.h"
 
-#import "CouchbaseLite.h"
+#import "CouchbaseLiteLegacy.h"
 #import "CBLListener.h"
 #import "CBLRegisterJSViewCompiler.h"
 

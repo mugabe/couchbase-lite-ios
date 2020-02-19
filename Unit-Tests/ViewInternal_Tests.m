@@ -7,7 +7,7 @@
 //
 
 #import "CBLTestCase.h"
-#import "CouchbaseLitePrivate.h"
+#import "CouchbaseLiteLegacyPrivate.h"
 #import "CBLView+Internal.h"
 #import "CBLQuery+Geo.h"
 #import "CBLQueryRow+Router.h"

@@ -7,7 +7,7 @@
 //
 
 #import "CBLTestCase.h"
-#import "CouchbaseLitePrivate.h"
+#import "CouchbaseLiteLegacyPrivate.h"
 #import "CBLRestReplicator+Internal.h"
 #import "CBLRestPuller.h"
 #import "CBLRestPusher.h"

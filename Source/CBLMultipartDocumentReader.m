@@ -20,7 +20,7 @@
 #import "CBLInternal.h"
 #import "CBLBase64.h"
 #import "CBLMisc.h"
-#import "CouchbaseLitePrivate.h"
+#import "CouchbaseLiteLegacyPrivate.h"
 #import "CollectionUtils.h"
 #import "MYStreamUtils.h"
 #import "CBLGZip.h"

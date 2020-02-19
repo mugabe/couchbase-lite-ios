@@ -15,7 +15,7 @@
 
 #import "CBL_Router.h"
 #import "CBLDatabase.h"
-#import "CouchbaseLitePrivate.h"
+#import "CouchbaseLiteLegacyPrivate.h"
 #import "CBLDatabase+Attachments.h"
 #import "CBLDatabase+Insertion.h"
 #import "CBLDatabase+Replication.h"

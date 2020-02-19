@@ -31,7 +31,7 @@
 #import "CBLDatabaseUpgrade.h"
 #import "CBLSymmetricKey.h"
 #import "CBLCookieStorage.h"
-#import "CouchbaseLitePrivate.h"
+#import "CouchbaseLiteLegacyPrivate.h"
 
 #import "MYBlockUtils.h"
 #import "ExceptionUtils.h"

@@ -6,7 +6,7 @@
 //  Copyright (c) 2014-2015 Couchbase, Inc. All rights reserved.
 //
 
-#import <Couchbaselite/CBLView.h>
+#import <CouchbaseLiteLegacy/CBLView.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

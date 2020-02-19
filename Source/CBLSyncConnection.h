@@ -7,8 +7,8 @@
 //
 
 #import "BLIPConnection.h"
-#import <CouchbaseLite/CBLDatabase.h>
-#import <CouchbaseLite/CBLStatus.h>
+#import <CouchbaseLiteLegacy/CBLDatabase.h>
+#import <CouchbaseLiteLegacy/CBLStatus.h>
 @class CBLQueryEnumerator, CBLBlipReplicator;
 
 

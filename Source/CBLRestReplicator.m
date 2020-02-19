@@ -25,7 +25,7 @@
 #import "CBLReachability.h"
 #import "CBL_URLProtocol.h"
 #import "CBLInternal.h"
-#import "CouchbaseLitePrivate.h"
+#import "CouchbaseLiteLegacyPrivate.h"
 #import "CBLMisc.h"
 #import "CBLBase64.h"
 #import "CBJSONEncoder.h"

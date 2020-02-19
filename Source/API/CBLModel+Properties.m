@@ -14,7 +14,7 @@
 //  and limitations under the License.
 
 #import "CBLModel_Internal.h"
-#import "CouchbaseLitePrivate.h"
+#import "CouchbaseLiteLegacyPrivate.h"
 #import "CBLModelArray.h"
 #import "CBLBase64.h"
 #import "CBLJSON.h"

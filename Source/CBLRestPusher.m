@@ -25,7 +25,7 @@
 #import "CBLBatcher.h"
 #import "CBLRemoteSession.h"
 #import "CBLMultipartUploader.h"
-#import "CouchbaseLitePrivate.h"
+#import "CouchbaseLiteLegacyPrivate.h"
 #import "CBLInternal.h"
 #import "CBLMisc.h"
 #import "CBJSONEncoder.h"
