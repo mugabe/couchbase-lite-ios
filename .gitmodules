@@ -15,7 +15,7 @@
 	url = https://github.com/couchbaselabs/WebSockets-Cocoa.git
 [submodule "vendor/CBForest"]
 	path = vendor/CBForest
-	url = https://github.com/couchbaselabs/cbforest.git
+	url = https://github.com/mugabe/couchbase-cbforest.git
 [submodule "vendor/fmdb"]
 	path = vendor/fmdb
 	url = https://github.com/couchbaselabs/fmdb.git
