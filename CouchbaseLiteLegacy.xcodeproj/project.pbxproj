@@ -4454,7 +4454,7 @@
 					};
 					27452BB71AB1180800327776 = {
 						CreatedOnToolsVersion = 6.3;
-						DevelopmentTeam = N2Q372V7W2;
+						ProvisioningStyle = Manual;
 					};
 					275315D414ACF0A10065964D = {
 						DevelopmentTeam = N2Q372V7W2;
@@ -5979,8 +5979,12 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 27FFFF151C973FB5001A70FC /* iOS framework_Debug.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.couchbase.CouchbaseLiteLegacy;
 				PRODUCT_NAME = CouchbaseLiteLegacy;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 			};
 			name = Debug;
 		};
