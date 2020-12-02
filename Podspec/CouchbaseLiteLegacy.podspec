@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
     s.homepage              = 'https://github.com/couchbase/couchbase-lite-ios'
     s.summary               = 'An embedded syncable NoSQL database for iOS and MacOS apps.'
     s.author                = 'Couchbase'
-    s.source                = { :git => 'git@github.com:pridemon/ios-utils.git', :branch => "podspec", :submodules => true }
+    s.source                = { :git => 'git@github.com:mugabe/couchbase-lite-ios-1.x-xcode11.git', :branch => "podspec", :submodules => true }
   
     s.prepare_command = <<-CMD
       sh BuildScripts/BuildFramework.sh s.version s.version community ios
