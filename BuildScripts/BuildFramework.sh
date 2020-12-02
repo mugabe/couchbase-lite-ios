@@ -45,7 +45,7 @@ EXTRAS_DIR=${ZIP_SRCD}/Extras
 
 if [[ $OS =~ ios ]]
 then
-    SCHEME="CI iOS" 
+    SCHEME="CBL iOS framework - Carthage" 
     SDK="iphoneos"
     OPENID_SRC=${BASE_DIR}/Source/API/Extras/OpenIDConnectUI
     LIB_SQLCIPHER=${BASE_DIR}/${SQLCIPHER}/libs/ios/libsqlcipher.a
