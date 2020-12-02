@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name                  = 'CouchbaseLiteLegacy'
-    s.version               = '2.0.0'
+    s.version               = '1.x'
     s.license               = 'Apache License, Version 2.0'
     s.homepage              = 'https://github.com/couchbase/couchbase-lite-ios'
     s.summary               = 'An embedded syncable NoSQL database for iOS and MacOS apps.'
@@ -15,5 +15,4 @@ Pod::Spec.new do |s|
     s.ios.vendored_frameworks = 'zipfile_staging/CouchbaseLiteLegacy.framework'
   
     s.ios.deployment_target  = '9.0'
-    s.osx.deployment_target  = '10.11'
   end
